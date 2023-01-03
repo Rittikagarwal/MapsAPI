@@ -21,6 +21,8 @@ function initMap() {
           document.getElementById('address').innerText = results[0].formatted_address;
           document.getElementById('lat').innerText = latLng.lat();
           document.getElementById('lng').innerText = latLng.lng();
+          // Print the address as a JSON object
+          console.log(JSON.stringify(results[0]));
         } else {
           window.alert('No results found');
         }
